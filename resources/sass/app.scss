@@ -1,6 +1,39 @@
 //
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: gray;
+}
+
+/* general /*/
+
+
+// CONTENT
+h1{
+    text-align: center;
+    margin: 33px auto;
+}
 
 .container{
     width: 80%;
     margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2%;
+    row-gap: 30px;
+    .card-movie{
+        width: 23%;
+        padding: 21px;
+        border: 1px solid lightgray;
+        border-radius: 9px;
+        background-color: #b1b1b1;
+        h3,
+        p{
+            color: #606060;
+        }
+    }
 }

@@ -11,40 +11,42 @@
         <h1>
             LARAVEL MOVIES
         </h1>
-        @foreach ($movies as $movie)
-            <!-- Creo la card di ogni film -->
-            <div class="card-movie">
 
-                <div class="container">
+        <div class="container">
 
-                                   <!-- Titolo -->
-                    <h2>
-                        {{$movie["title"]}}
-                    </h2>
+            @foreach ($movies as $movie)
+                <!-- Creo la card di ogni film -->
+                <div class="card-movie">
 
-                    <!-- Titolo originale -->
-                    <h3>
-                        {{$movie["original_title"]}}
-                    </h3>
+                                    <!-- Titolo -->
+                        <h2>
+                            {{$movie["title"]}}
+                        </h2>
 
-                    <!-- Nazione -->
-                    <p>
-                        {{$movie["nationality"]}}
-                    </p>
+                        <!-- Titolo originale -->
+                        <h3>
+                            {{$movie["original_title"]}}
+                        </h3>
 
-                    <!-- Voto medio -->
-                    <p>
-                        {{$movie["vote"]}}
-                    </p>
+                        <!-- Nazione -->
+                        <p>
+                            {{$movie["nationality"]}}
+                        </p>
 
-                    <!-- Data di uscita -->
-                    <p>
-                        {{$movie["date"]}}
-                    </p>
+                        <!-- Voto medio -->
+                        <p>
+                            {{$movie["vote"]}}
+                        </p>
 
+                        <!-- Data di uscita -->
+                        <p>
+                            {{$movie["date"]}}
+                        </p>
+    
                 </div>
- 
-            </div>
-        @endforeach
+            @endforeach
+
+        </div>
+       
     </body>
 </html>
